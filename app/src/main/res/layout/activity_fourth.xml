@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90C2185B"
+    tools:context=".fourthActivity"
+    android:layout_centerInParent="true"
+    >
+
+    <TextView
+        android:id="@+id/BMI"
+        android:layout_width="169dp"
+        android:layout_height="59dp"
+        android:gravity="center"
+        android:text="Your BMI"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="342dp"
+        android:layout_height="298dp"
+        android:background="#547B1FA2"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.415">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="أقل من 15	نقص حاد جداً في الوزن من 15 إلى 16	نقص حاد في الوزن من 16 إلى 18.5	نقص في الوزن من 18.5 إلى 25	وزن طبيعي من 25 إلى 30	زيادة في الوزن من 30 الى 35	سمنة درجة أولى من 35 إلى 40	سمنة درجة ثانية أكثر من 40	سمنة مفرطة جداً"
+            android:textSize="34sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/nextpage"
+        android:layout_width="180dp"
+        android:layout_height="84dp"
+        android:gravity="center"
+        android:text="Next Page"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.908" />
+
+    <EditText
+        android:id="@+id/bmi"
+        android:layout_width="140dp"
+        android:layout_height="83dp"
+        android:ems="10"
+        android:hint="Result"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
